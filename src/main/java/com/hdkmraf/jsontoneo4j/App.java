@@ -11,7 +11,7 @@ public class App
 {
     public static void main( String[] args )
     {
-         if(args.length != 2){
+         if(args.length != 3){
             System.out.println("Usage: JSONtoNeo4j path database index");
             System.out.println("path - Where the .json or .js files are located");
             System.out.println("database - Neo4j database, it will be created inside path, if a file exists with that name it will be overwriten");
