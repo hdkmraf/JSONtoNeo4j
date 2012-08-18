@@ -12,7 +12,11 @@ public class App
     public static void main( String[] args )
     {
          if(args.length != 2){
-            System.out.println("Usage: JSONtoNeo4j directory_name database_name index_value");
+            System.out.println("Usage: JSONtoNeo4j path database index");
+            System.out.println("path - Where the .json or .js files are located");
+            System.out.println("database - Neo4j database, it will be created inside path, if a file exists with that name it will be overwriten");
+            System.out.println("index - An attribute in each JSON object that will act as index for all the nodes in the database. If the attribute is missing, the object will not be considred a node");
+            return;
         }
         
         String dir = args[0];
