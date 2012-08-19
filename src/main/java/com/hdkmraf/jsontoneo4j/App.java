@@ -27,7 +27,7 @@ public class App
         //String dbName = "graph.db";
          
         System.out.println("Starting graph");
-        Graph graph = new Graph(dir, dir+dbName, true, index);        
+        Graph graph = new Graph(dir, dir+"/"+dbName, true, index);        
             
         File folder = new File(dir);
         File[] listOfFiles = folder.listFiles();
