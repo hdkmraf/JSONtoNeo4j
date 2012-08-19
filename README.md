@@ -13,5 +13,5 @@ Building
 
 Running
 -------
-<pre>./run.sh <path> <database> <index>
+<pre>./run.sh path database index
 </pre>
